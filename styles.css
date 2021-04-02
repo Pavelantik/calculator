@@ -1,0 +1,82 @@
+button:hover {
+  cursor: pointer;
+  background-color: dodgerblue;
+  font-size: 24px;
+}
+.btn {
+  width: 60px;
+  height: 60px;
+  border-style: solid;
+  color: white;
+  outline: none;
+}
+.digit-button {
+  background-color: #574d99;
+}
+.action-button,
+.del-btn,
+.random-number-btn,
+.button-equal,
+.clear-btn,
+.logarithm-operation {
+  background-color: #6b82f2;
+}
+.calculator {
+  margin: auto;
+  border-style: double;
+  width: min-content;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "display display"
+    "control control"
+    "digit action";
+}
+.display {
+  width: 300px;
+  background-color: #393756;
+  grid-area: display;
+  color: white;
+}
+.display_previous-operand,
+.display_operation {
+  font-size: 26px;
+}
+.display-item {
+  margin: 0;
+  /* min-height: 30px; */
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: right;
+}
+.display_current-operand {
+  margin: 0;
+  font-size: 40px;
+  overflow-wrap: break-word;
+}
+.display_result {
+  margin: 0;
+  font-size: 40px;
+  display: none;
+}
+.action-buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-area: action;
+}
+.digit-buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-area: digit;
+}
+.controls-buttons {
+  display: flex;
+  grid-area: control;
+}
+.button-equal {
+  flex: 1 0 auto;
+  background-color: #4152a3;
+}
